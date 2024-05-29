@@ -72,6 +72,20 @@ input, select, textarea {
 	appearance: none;
 }
 
+.container {
+	height: 10px;
+	position: relative;
+}
+
+.center {
+	margin: 0;
+	position: absolute;
+	top: 90%;
+	left: 90%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
 /* Basic */
 
 	.root {
@@ -125,6 +139,11 @@ input, select, textarea {
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
+	}
+
+	.dark-mode {
+		background-color: #242224;
+		color: #f6f6f6;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -3170,7 +3189,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: light-dark(#f6f6f6, #242224);
+		/* background-color: light-dark(#f6f6f6, #242224); */
 	}
 
 		#footer > .inner {
